@@ -8,8 +8,8 @@
     "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
     "css:dev": "npx tailwindcss -i _sass/main.scss -o _site/assets/css/main.css",
     "css:build": "NODE_ENV=production npx tailwindcss -i _sass/main.scss -o _site/assets/css/main.css",
-    "dev": "concurrently --kill-others \"npm run css:dev\" \"npm run jekyll:dev\"",
-    "build": "npm run css:build && npm run jekyll:build"
+    "dev": "npm run jekyll:dev",
+    "build": "npm run jekyll:build"
   },
   "keywords": [],
   "author": "",
